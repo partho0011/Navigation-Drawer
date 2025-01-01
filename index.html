@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <title>Navigation Drawer</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <div id="container" class="container">
+    <div id="cover" class="cover"></div>
+    <div id="nav-container" class="nav-container">
+      <section class="header">
+        <img class="header__icon" src="./assets/android.svg" alt="android">
+        <p class="header__title">Header Section</p>
+      </section>
+      <section class="main">
+        <ul class="items" id="items">
+          <li>
+            <div id="settings" class="li-cover"></div>
+            <div class="item">
+              <img src="../assets/settings.svg" alt="settings">
+              <p>Settings</p>
+            </div>
+          </li>
+          <li>
+            <div id="feedback" class="li-cover"></div>
+            <div class="item">
+              <img src="../assets/feedback.svg" alt="feedback">
+              <p>Feedback</p>
+            </div>
+          </li>
+          <li>
+            <div id="contact" class="li-cover"></div>
+            <div class="item">
+              <img src="../assets/contact.svg" alt="contact">
+              <p>Contact Us</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    
+    <div class="toolbar" id="toolbar">
+      <img class="menu" id="menu" src="./assets/menu.svg" alt="menu">
+      <h2 class="title">Navigation Drawer</h2>
+    </div>
+    <p class="info">&rightarrow; Slide from left to Open Drawer</p>
+    
+    <div class="toast" id="toast">
+      Testing...
+    </div>
+  </div>
+  
+  <script src="main.js" defer></script>
+</body>
+</html>

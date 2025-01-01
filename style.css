@@ -1,0 +1,148 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.toolbar{
+  width: 100%;
+  height: 8vh;
+  background-color: #0F78D4;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.7);
+}
+
+.menu{
+  margin: 0 0 0 0.5rem;
+}
+
+.info{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  z-index: -1;
+}
+
+.nav-container{
+  position: absolute;
+  width: 280px;
+  height: 100%;
+  top: 0;
+  left: -280px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  transition: none;
+}
+
+.header{
+  flex-basis: 25%;
+  width: 100%;
+  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header__icon{
+  width: 60px;
+  height: 60px;
+  outline: 0.2rem solid #0FAAD4;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.header__title{
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  letter-spacing: 0.2rem;
+}
+
+.main{
+  flex-basis: 75%;
+  width: 100%;
+}
+
+.items{
+  padding: 1.5rem 0 0 0;
+  list-style-type: none;
+}
+
+li{
+  position: relative;
+}
+
+.item{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 0.3px solid gray;
+  padding: 0.65rem 0 0.65rem 1rem;
+}
+
+.li-cover{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.item img{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.item p{
+  font-size: 1rem;
+}
+
+.cover{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: black;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.toast{
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  background-color: #757575;
+  color: #fff;
+  padding: 0.7rem 1.3rem;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  z-index: 99;
+  box-shadow: 0 0 0.7rem rgba(0, 0, 0, 0.5), 0 0 0.7rem rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: .5s;
+  display: none;
+}
+
+.toast.show{
+  opacity: 1;
+}
